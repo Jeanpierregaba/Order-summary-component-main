@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display';
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.background-pattern .desktop-pattern {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.background-pattern .mobile-pattern{
+    display: none;
+}
+
+.main-content{
+    position: absolute;
+    width: 430px;
+    height: 600px;
+    left: 35%;
+    background-color: white;
+    top: 8%;
+    border-radius: 5%;
+}
+
+.img-zone img{
+    width: 100%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.descr-zone h1{
+    position: absolute;
+    top: 36%;
+    left: 18%;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.descr-zone p{
+    position: absolute;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    top: 45%;
+    left: 5%;
+    margin: 0 25px;
+    text-align: center;
+}
+
+.descr-zone .price-zone{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 80%;
+    height: 100px;
+    background-color: hsl(225, 100%, 98%);
+    
+    border-radius: 4%;
+}
+
+.descr-zone .price-zone img{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.descr-zone .price-zone h4{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+.descr-zone .price-zone h5{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.descr-zone .price-zone span{
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+
+.descr-zone .price-zone span:hover{
+    text-decoration: none;
+    opacity: 65%;
+    cursor: pointer;
+}
+
+.descr-zone button{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 80%;
+    height: 50px;
+    border-color: transparent;
+    border-radius: 2%;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+}
+
+.descr-zone button:hover{
+    opacity: 65%;
+    cursor: pointer;
+}
+
+.descr-zone span {
+    position: absolute;
+    top: 92%;
+    left: 38%;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.descr-zone span:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media screen and (max-width:375px) {
+
+    .container{
+        width: 375px;  
+        height: 700px;
+    }
+
+    .main-content{
+        width: 325px;
+        height: 600px;
+        top: 15%;
+
+    }
+
+    .background-pattern .desktop-pattern {
+        display: none;
+    }
+    
+    .background-pattern .mobile-pattern{
+        display: block;
+        width: auto;
+    }
+
+    .descr-zone h1{
+        top: 35%;
+        left: 15%;
+    }
+
+    .descr-zone p{
+        top: 45%;
+        left: 3%;
+    }
+    
+}
+
+@media screen and (max-width:1440px){
+    .descr-zone h1{
+        top: 40%;
+        left: 22%;
+    }
+
+    .descr-zone p{
+        top: 48%;
+        left: 4%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .main-content{
+        left: 32%;
+    }
+}
+
+@media screen and (max-width:1180px){
+    .descr-zone h1{
+        top: 40%;
+        left: 22%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .main-content{
+        left: 23%;
+    }
+}
+
+@media screen and (max-width:425px){
+  
+    .container{
+        width: 425px;  
+        height: 700px;
+    }
+
+    .main-content{
+        width: 325px;
+        height: 600px;
+        top: 5%;
+        left: 12%;
+    }
+
+    .background-pattern .desktop-pattern {
+        display: none;
+    }
+    
+    .background-pattern .mobile-pattern{
+        display: block;
+        width: 425px;
+    }
+
+    .descr-zone h1{
+        top: 35%;
+        left: 12%;
+    }
+
+    .descr-zone p{
+        top: 43%;
+        left: 0%;
+    }
+}
+
+
+.attribution { 
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    font-size: 11px; 
+    text-align: center; 
+
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
